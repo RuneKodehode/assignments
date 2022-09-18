@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arctic</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .grid-container {
+            width: 100%;
+            margin-right: -20px;
+            display: grid;
+            grid-template-columns: 20% auto 20%;
+            grid-template-rows:  30% 35% auto;
+            gap: 10px ;
+            background-image: url("images/headlinephoto.jpg");
+            background-size:cover;
+            height:100vh;
+            border-radius: 40px;
+        }
+        .para {
+            justify-self: center;
+            grid-column: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            z-index: 2
+        }
+    /* penguins1 */
+        .item2 {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            justify-self: stretch;
+        }
+        .item2:hover {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            width: 800px;
+            z-index: 3;
+            margin-top: 20px;
+            margin-left: 20px
+        }
+    
+    /*  penguins 2*/
+        .item3 {
+            grid-column: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            justify-self: stretch;
+        }
+
+        .item3:hover {
+            justify-self: center;
+            grid-column: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            z-index: 3;
+            margin-right: 300px;
+            width: 600px;
+        }
+    /* whale */
+        .item4 {
+            grid-column-start: 3;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            justify-self: stretch;
+            margin-right: 20px;
+        }
+        .item4:hover {
+            grid-column-start: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            justify-self: center;
+            width: 800px;
+            margin-top: 150px;
+            margin-right: 450px;
+            z-index: 3;
+        }
+    /* seductive seal */
+        .item5 {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            justify-self: stretch;
+        }
+        .item5:hover {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            width: 800px;
+            margin-left: 20px;
+            z-index: 3;
+        }
+    /* peng seal */
+        .item6 {
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            justify-self: stretch;
+         
+        }
+        .item6:hover {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            width: 800px;
+            z-index: 3;
+            margin-top: 110px;
+            margin-left: 20px
+        }
+        .item7 {
+            grid-column-start: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            justify-self: stretch;
+         
+        }
+        .item7:hover {
+            grid-column-start: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            width: 800px;
+            z-index: 3;
+            margin-left: -450px;
+            justify-content: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="topline">
+        <div>
+            <button class="topbutton" >button 1</button>
+        </div>
+        <div>
+            <button class="topbutton" >button 1</button>
+        </div>
+        <div>
+            <button class="topbutton" >button 1</button>
+        </div>
+        <div>
+            <button class="topbutton" >button 1</button>
+        </div>
+    </div>
+        <div class="grid-container">
+            <h1 class="header">ANTARCTICA</h1>
+            <p class="para">Antarctica is Earth's southernmost and least-populated continent. <br> <br> 
+                Situated almost entirely south of the Antarctic Circle and surrounded by the Southern Ocean, it contains the geographic South Pole. 
+                Antarctica is the fifth-largest continent, being nearly twice the size of Australia and larger than Europe, and has an area of 14,200,000 km2. <br><br>
+                Most of Antarctica is covered by ice, with an average thickness of 1.9 km (1.2 mi). Antarctica is on average the coldest, driest, and windiest of the continents, and it has the highest average elevation. It is mainly a polar desert, with annual precipitation of over 200 mm (8 in) along the coast and far less inland.<br> <br> 
+                About 70% of the world's freshwater reserves are frozen in Antarctica, which if melted would raise global sea levels by almost 60 metres (200 ft). Antarctica holds the record for the lowest measured temperature on Earth, −89.2 °C (−128.6 °F). 
+                The coastal regions can reach temperatures over 10 °C (50 °F) in summer.<br> <br>  Native species of animals include mites, nematodes, penguins, seals and tardigrades. Where vegetation occurs, it is mostly in the form of lichen or moss.<br> <br> 
+                The ice shelves of Antarctica were probably first seen in 1820, during a Russian expedition led by Fabian Gottlieb von Bellingshausen and Mikhail Lazarev. The decades that followed saw further exploration in French, American, and British expeditions. 
+                The first confirmed landing was by a Norwegian team in 1895. In the early 20th century, there were a few expeditions into the interior of the continent.<br> <br>  
+                British explorers were the first to reach the magnetic South Pole in 1909, and the geographic South Pole was first reached in 1911 by Norwegian explorers.<br> <br> 
+            </p>
+            <img class="item2" src="images/penguins1.jpg" alt="penguins">
+            <img class="item3" src="images/penguins2.jpg" alt="penguins">
+            <img class="item4" src="images/whale.jpg" alt="penguins">
+            <img class="item5" src="images/seductive-seal.jpg" alt="penguins">
+            <img class="item6" src="images/peng-seal.jpg" alt="penguins">
+            <img class="item7" src="images/nighttime.jpg" alt="arctic at night">
+        </div>
+</body>
+</html>
