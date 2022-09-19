@@ -1,0 +1,96 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+  background-color: #000;
+  animation: bilde 10s infinite alternate-reverse;
+}
+@keyframes bilde {
+  from {
+    background-color: #000;
+  }
+  to {
+    background-color: white;
+  }
+}
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.pimg1 {
+  background-image: url("images/Headline-photo.jpg");
+  min-height: 60%;
+}
+.pimg2 {
+  background-image: url("images/river-cano.jpg");
+  min-height: 50%;
+}
+.pimg3 {
+  background-image: url("images/jungle.jpg");
+  min-height: 50%;
+}
+.pimg4 {
+  background-image: url("images/monkey.jpg");
+  min-height: 50%;
+}
+.section {
+  text-align: center;
+  padding: 50px 80px;
+  border: 3px solid black;
+  background-color: white;
+  font-size: 25px;
+}
+.section-light {
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 47px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+.ptext .border.trans {
+  background-color: transparent;
+  animation: borders 5s infinite alternate-reverse;
+}
+@keyframes borders {
+  from {
+    background-color: rgb(25, 118, 39);
+  }
+}
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg4 {
+    background-attachment: scroll;
+  }
+}
+.section-dark {
+  animation: bakgrunn 5s infinite alternate-reverse;
+}
