@@ -47,6 +47,7 @@ html {
 }
 .img3 {
   background-image: url("images/jungle.jpg");
+  height: 0;
   min-height: 20%;
 }
 .img4 {
@@ -98,4 +99,7 @@ html {
   .img4 {
     background-attachment: scroll;
   }
+}
+#fsbutton {
+  transition: 3s;
 }
