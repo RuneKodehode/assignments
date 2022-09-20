@@ -5,19 +5,22 @@ html {
   font-weight: 400;
   line-height: 1.8em;
   font-family: alegreya;
-  animation: bakgrunn 7s infinite alternate-reverse;
+  animation: bakgrunn 4s infinite alternate-reverse;
 }
 .ptext .border.trans {
   background-color: transparent;
-  animation: bakgrunn 7s infinite alternate-reverse;
+  animation: bakgrunn 4s infinite alternate-reverse;
 }
-
-.section-dark {
- padding: 0px 100px;
+.ptext .border {
+  background-color: #111;
+  color: orange;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: underline 5px gold;
+  animation: bakgrunn 4s infinite alternate-reverse;
 }
-
 @keyframes bakgrunn {
-  to {
+  from {
     background-color: black;
     text-shadow: -5px 12px 3px black;
   }
@@ -38,7 +41,7 @@ html {
 }
 .img2 {
   background-image: url("images/river-cano.jpg");
-  min-height: 40%;
+  min-height: 50%;
 }
 .img3 {
   background-image: url("images/jungle.jpg");
@@ -50,14 +53,18 @@ html {
 }
 .section {
   text-align: center;
-  padding:-50px 80px;
+  padding: -50px 80px;
   border: 3px solid black;
   font-size: 22px;
   border: 2px solid black;
 }
 .section-dark {
+  padding: 0px 100px;
   background-color: #000;
-  color: #ddd;
+  color: #f6aa1c;
+  border-top: 5px solid #f6aa1c;
+  border-bottom: 5px solid #f6aa1c;
+  font-weight: 100;
 }
 .ptext {
   position: absolute;
@@ -68,14 +75,6 @@ html {
   font-size: 45px;
   letter-spacing: 8px;
   text-transform: uppercase;
-}
-.ptext .border {
-  background-color: #111;
-  color: orange;
-  padding: 20px;
-  border-radius: 10px;
-  text-decoration: underline 5px gold;
-  animation: bakgrunn 7s infinite alternate-reverse;
 }
 .fs {
   font-size: 25px;
