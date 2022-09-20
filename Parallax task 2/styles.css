@@ -45,15 +45,14 @@ html {
 }
 .img3 {
   background-image: url("images/jungle.jpg");
-  min-height: 40%;
+  min-height: 20%;
 }
 .img4 {
   background-image: url("images/monkey.jpg");
-  min-height: 70%;
+  min-height: 100%;
 }
 .section {
   text-align: center;
-  padding: -50px 80px;
   border: 3px solid black;
   font-size: 22px;
   border: 2px solid black;
@@ -68,7 +67,7 @@ html {
 }
 .ptext {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
   text-align: center;
   color: #000;
