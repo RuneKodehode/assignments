@@ -5,24 +5,25 @@ html {
   font-weight: 400;
   line-height: 1.8em;
   font-family: alegreya;
-  animation: bakgrunn 4s infinite alternate-reverse;
+  animation: bakgrunn 7s infinite alternate-reverse;
+  background-color: #f6aa1ca8;
 }
 .ptext .border.trans {
   background-color: transparent;
-  animation: bakgrunn 4s infinite alternate-reverse;
+  animation: bakgrunn 7s infinite alternate-reverse;
 }
 .ptext .border {
   background-color: #111;
   color: orange;
   padding: 20px;
   border-radius: 10px;
-  text-decoration: underline 5px gold;
-  animation: bakgrunn 4s infinite alternate-reverse;
+  text-decoration: underline 5px #f6aa1c;
+  animation: bakgrunn 7s infinite alternate-reverse;
 }
 @keyframes bakgrunn {
-  from {
+  to {
     background-color: black;
-    text-shadow: -5px 12px 3px black;
+    text-shadow: 0px 20px 5px black;
   }
 }
 .img1,
@@ -34,6 +35,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  opacity: 0.7;
 }
 .img1 {
   background-image: url("images/Headline-photo.jpg");
@@ -64,6 +66,12 @@ html {
   border-top: 5px solid #f6aa1c;
   border-bottom: 5px solid #f6aa1c;
   font-weight: 100;
+  animation: borderOpa 7s infinite alternate-reverse;
+}
+@keyframes borderOpa {
+  from {
+    border-color: transparent;
+  }
 }
 .ptext {
   position: absolute;
@@ -81,6 +89,7 @@ html {
 .fs:hover {
   font-size: 26px;
   cursor: pointer;
+  border: 5px solid #f6aa1c;
 }
 @media (max-width: 568px) {
   .img1,
