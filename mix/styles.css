@@ -4,44 +4,25 @@ body {
 }
 h1 {
   text-align: center;
+  font-size: 40px;
+  transition: 0.5s;
+  padding-top: 0px;
+  background-color: wheat;
+  margin: 20px auto;
+  width: 400px;
+  border-radius: 20px;
 }
 h1:hover {
   font-size: 40px;
   transition: 0.5s;
   padding-top: 0px;
-  background-color: white;
+  background-color: wheat;
   margin: 20px auto;
   width: 400px;
   border-radius: 20px;
 }
-h2 {
-  text-align: center;
-  border: 4px solid blueviolet;
-  margin: 20px auto;
-  width: 400px;
-  border-radius: 20px;
-}
-h2:hover {
-  font-size: 40px;
-  transition: 0.5s;
-  background-color: white;
-  margin: 20px auto;
-  width: 400px;
-  border-radius: 20px;
-}
-h3 {
-  text-align: center;
-}
-h3:hover {
-  font-size: 40px;
-  transition: 0.5s;
-  margin-top: -2px;
-  background-color: white;
-  margin: 20px auto;
-  width: 400px;
-  border-radius: 20px;
-}
-#DivKnapp {
+
+#randomKnapp {
   display: flex;
   justify-content: center;
   background-color: wheat;
@@ -50,7 +31,7 @@ h3:hover {
   padding: 10px 0px;
   border-radius: 20px;
 }
-#DivKnapp:hover {
+#randomKnapp:hover {
   transition: 3s;
   background-color: red;
   padding: 10px 0px;
