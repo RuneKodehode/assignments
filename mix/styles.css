@@ -1,68 +1,73 @@
 body {
   height: 100vh;
-  background: #541662;
+  overflow: hidden;
 }
 h1 {
   text-align: center;
-  font-size: 40px;
-  transition: 0.5s;
-  padding-top: 0px;
-  background-color: wheat;
+  background-color: rgba(245, 222, 179, 0);
+  width: 600px;
   margin: 20px auto;
-  width: 400px;
+  height: 60px;
+  font-size: 50px;
+  border: 6px solid black;
   border-radius: 20px;
 }
 h1:hover {
-  font-size: 40px;
-  transition: 0.5s;
-  padding-top: 0px;
-  background-color: wheat;
-  margin: 20px auto;
-  width: 400px;
-  border-radius: 20px;
+  transition: 0.3s;
+  background-color: none;
+  border-radius: 0px;
+  border-left: 12px solid black;
+  border-right: 12px solid black;
+  box-shadow: 4px 15px 20px black;
 }
-
-#randomKnapp {
+#DivKnapp {
   display: flex;
   justify-content: center;
-  background-color: wheat;
-  margin: 20px auto;
-  width: 400px;
-  padding: 10px 0px;
   border-radius: 20px;
 }
-#randomKnapp:hover {
-  transition: 3s;
-  background-color: red;
-  padding: 10px 0px;
+button {
+  font-size: 30px;
+  border-radius: 20px;
+  border: 4px solid rgb(0, 0, 0);
+  padding: 10px;
+  background: none;
+  margin: 40px;
+  width: 300px;
+}
+button:hover {
+  border-left: 25px solid black;
+  border-right: 25px solid black;
+  transition: 0.4s;
+  border-radius: 0px;
+  box-shadow: 4px 15px 20px black;
+  cursor: pointer;
 }
 #text {
   display: flex;
   justify-content: center;
   margin: 20px auto;
-  background-color: wheat;
-  width: 200px;
+  background: none;
+  width: 1000px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 40px;
   border-radius: 20px;
+  border: 5px solid black;
+}
+#text:hover {
+  box-shadow: 4px 15px 20px black;
+  transition: 0.3s;
 }
 #pandaPic {
   display: flex;
-  width: 300px;
-  margin: 20px auto;
+  width: 150px;
+  margin: 50px auto;
   border-radius: 100%;
   height: 100%;
-  transition: 2s;
+  transition: 0.3s;
+  border: 4px solid black;
 }
 #pandaPic:hover {
   border-radius: 20%;
-  border: 10px solid purple;
-  width: 600px;
-}
-#knappen {
-  font-size: 30px;
-  border-radius: 20px;
-  border: 2px solid grey;
-  padding: 10px;
-  background: linear-gradient(yellow, green);
+  width: 400px;
+  cursor: pointer;
 }
