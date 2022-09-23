@@ -29,10 +29,12 @@ let X9 = document.getElementById("x3y9");
 let W10 = document.getElementById("x2y10");
 let X10 = document.getElementById("x3y10");
 
+let rad1 = document.getElementById("row1");
+let tableheader = document.getElementsByClassName("th");
 let tabellen = document.getElementById("tableId");
 
 let scaled = 0;
-let delay1 = 200;
+let delay1 = 100;
 let delayms = 400;
 let delay2 = 800;
 let delay3 = 1200;
@@ -77,7 +79,7 @@ function btnClick() {
     V3.style.background = rando1;
     V4.style.background = rando1;
     V5.style.background = rando1;
-    V1.style.background = "white";
+    V1.style.background = "transparent";
     scaled = 0;
   }, delayms);
 
@@ -88,7 +90,7 @@ function btnClick() {
     V4.style.background = rando1;
     V5.style.background = rando1;
     V6.style.background = rando1;
-    V2.style.background = "white";
+    V2.style.background = "transparent";
     scaled = 0;
   }, delay2);
 
@@ -99,7 +101,7 @@ function btnClick() {
     V5.style.background = rando1;
     V6.style.background = rando1;
     V7.style.background = rando1;
-    V3.style.background = "white";
+    V3.style.background = "transparent";
     scaled = 0;
   }, delay3);
 
@@ -110,7 +112,7 @@ function btnClick() {
     V6.style.background = rando1;
     V7.style.background = rando1;
     V8.style.background = rando1;
-    V4.style.background = "white";
+    V4.style.background = "transparent";
     scaled = 0;
   }, delay4);
 
@@ -121,7 +123,7 @@ function btnClick() {
     V7.style.background = rando1;
     V8.style.background = rando1;
     V9.style.background = rando1;
-    V5.style.background = "white";
+    V5.style.background = "transparent";
     scaled = 0;
   }, delay5);
 
@@ -132,7 +134,7 @@ function btnClick() {
     V8.style.background = rando1;
     V9.style.background = rando1;
     V10.style.background = rando1;
-    V6.style.background = "white";
+    V6.style.background = "transparent";
     scaled = 0;
   }, delay6);
 
@@ -154,8 +156,8 @@ function btnClick() {
     X2.style.background = rando1;
     W3.style.background = rando1;
     X3.style.background = rando1;
-    W1.style.background = "WHITE";
-    X1.style.background = "WHITE";
+    W1.style.background = "transparent";
+    X1.style.background = "transparent";
 
     scaled = 0;
   }, delay8);
@@ -167,8 +169,8 @@ function btnClick() {
     X3.style.background = rando1;
     W4.style.background = rando1;
     X4.style.background = rando1;
-    W2.style.background = "WHITE";
-    X2.style.background = "WHITE";
+    W2.style.background = "transparent";
+    X2.style.background = "transparent";
 
     scaled = 0;
   }, delay9);
@@ -180,8 +182,8 @@ function btnClick() {
     X4.style.background = rando1;
     W5.style.background = rando1;
     X5.style.background = rando1;
-    W3.style.background = "WHITE";
-    X3.style.background = "WHITE";
+    W3.style.background = "transparent";
+    X3.style.background = "transparent";
 
     scaled = 04;
   }, delay10);
@@ -193,8 +195,8 @@ function btnClick() {
     X5.style.background = rando1;
     W6.style.background = rando1;
     X6.style.background = rando1;
-    W4.style.background = "WHITE";
-    X4.style.background = "WHITE";
+    W4.style.background = "transparent";
+    X4.style.background = "transparent";
 
     scaled = 04;
   }, delay11);
@@ -206,8 +208,8 @@ function btnClick() {
     X6.style.background = rando1;
     X7.style.background = rando1;
     W7.style.background = rando1;
-    W5.style.background = "WHITE";
-    X5.style.background = "WHITE";
+    W5.style.background = "transparent";
+    X5.style.background = "transparent";
 
     scaled = 04;
   }, delay12);
@@ -219,8 +221,8 @@ function btnClick() {
     X7.style.background = rando1;
     X8.style.background = rando1;
     W8.style.background = rando1;
-    W6.style.background = "WHITE";
-    X6.style.background = "WHITE";
+    W6.style.background = "transparent";
+    X6.style.background = "transparent";
 
     scaled = 04;
   }, delay13);
@@ -232,8 +234,8 @@ function btnClick() {
     X8.style.background = rando1;
     X9.style.background = rando1;
     W9.style.background = rando1;
-    W7.style.background = "WHITE";
-    X7.style.background = "WHITE";
+    W7.style.background = "transparent";
+    X7.style.background = "transparent";
 
     scaled = 04;
   }, delay14);
@@ -245,8 +247,8 @@ function btnClick() {
     X9.style.background = rando1;
     X10.style.background = rando1;
     W10.style.background = rando1;
-    W8.style.background = "WHITE";
-    X8.style.background = "WHITE";
+    W8.style.background = "transparent";
+    X8.style.background = "transparent";
 
     scaled = 04;
   }, delay15);
@@ -254,9 +256,10 @@ function btnClick() {
 
 function btnClick2() {
   if (!scaled) {
-    tabellen.style.width = "700px";
+    tabellen.style.width = "800px";
     tabellen.style.height = "800px";
-    tabellen.style.fontSize = "0px";
+    tabellen.style.fontSize = "0";
+    rad1.style.height = "40px";
 
     scaled = 1;
   } else {
