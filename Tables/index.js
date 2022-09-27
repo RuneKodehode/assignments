@@ -1,23 +1,52 @@
 const cells = document.querySelectorAll("td");
-
+let h1 = document.getElementById("headline");
 let skalering = 0;
+let asd = 0;
+let playStop = 0;
 function btnClick() {
-  setInterval(() => {
-    if (skalering < cells.length) {
-      let ruto = cells[skalering];
-      let rando1 = "#" + Math.floor(Math.random() * 16777215).toString(16);
-      ruto.style.background = rando1;
-      skalering++;
-      console.log(skalering);
-    } else {
-      skalering -= 100;
-      console.log(skalering);
+  if (!playStop) {
+    playStop = 1;
+
+    setInterval(() => {
+      if (skalering < cells.length) {
+        let ruto = cells[skalering];
+
+        let rando1 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        ruto.style.background = rando1;
+
+        skalering++;
+      } else {
+        skalering -= 100;
+      }
+    }, 20);
+
+    setInterval(() => {
+      if (!asd) {
+        let rando1 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        h1.style.background = rando1;
+        asd = 1;
+        h1.style.width = "400px";
+        console.log(asd);
+      } else {
+        let rando1 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        h1.style.background = rando1;
+        h1.style.width = "800px";
+        asd = 0;
+        console.log(asd);
+      }
+    }, 1000);
+  } else {
+    function stopbackground() {
+      playStop = 0;
+      h1.style.background = "transparent";
+      h1.style.width = 400;
+      console.log("wtf");
     }
-  }, 20);
+  }
 }
 
 // TRANSFORM SHIT-------------------------------------------------------------
-let h1 = document.getElementById("headline");
+
 let rad1 = document.getElementById("row1");
 let tableheader = document.getElementsByClassName("th");
 let tabellen = document.getElementById("tableId");
