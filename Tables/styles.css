@@ -66,3 +66,18 @@ h1 {
 .tdbox {
   border: 4px solid black;
 }
+#tData {
+  column-span: 3;
+}
+#x9y1 {
+  border: 4px solid black;
+}
+#x9y2 {
+  border: 4px solid black;
+}
+#x10y1 {
+  border: 4px solid black;
+}
+#x10y2 {
+  border: 4px solid black;
+}

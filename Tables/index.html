@@ -12,7 +12,7 @@
     <h1 id="headline">Tables</h1>
     <table id="tableId">
       <tr id="row1">
-        <td class="tdbox">X1Y1</th>
+        <td Rowspan="2" colspan="2" id="tData1">X1Y1</th>
         <td class="tdbox">X2Y1</th>
         <td class="tdbox">X3Y1</th>
         <td class="tdbox">X4Y1</th>
@@ -20,8 +20,8 @@
         <td class="tdbox">X6Y1</th>
         <td class="tdbox">X7Y1</th>
         <td class="tdbox">X8Y1</th>
-        <td class="tdbox">X9Y1</th>
-        <td class="tdbox">X10Y1</th>
+        <td colspan="3" id="x9y1">X9Y1</th>
+        <td  rowspan="10" id="x10y1">X10Y1</th>
       </tr>
       <tr id="row2">
         <td class="tdbox">X2Y2</td>
@@ -32,8 +32,8 @@
         <td class="tdbox">X6Y2</td>
         <td class="tdbox">X7Y2</td>
         <td class="tdbox">X8Y2</td>
-        <td class="tdbox">X9Y2</td>
-        <td class="tdbox">X10Y2</td>
+        <td rowspan="9" id="x9y2">X9Y2</td>
+        <td rowspan="9" id="x10y2">X10Y2</td>
       </tr>
       <tr class="row3">
         <td class="tdbox">X1Y3</td>

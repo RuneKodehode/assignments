@@ -4,45 +4,16 @@ let skalering = 0;
 let asd = 0;
 let playStop = 0;
 function btnClick() {
-  if (!playStop) {
-    playStop = 1;
-
-    setInterval(() => {
-      if (skalering < cells.length) {
-        let ruto = cells[skalering];
-
-        let rando1 = "#" + Math.floor(Math.random() * 16777215).toString(16);
-        ruto.style.background = rando1;
-
-        skalering++;
-      } else {
-        skalering -= 100;
-      }
-    }, 20);
-
-    setInterval(() => {
-      if (!asd) {
-        let rando1 = "#" + Math.floor(Math.random() * 16777215).toString(16);
-        h1.style.background = rando1;
-        asd = 1;
-        h1.style.width = "400px";
-        console.log(asd);
-      } else {
-        let rando1 = "#" + Math.floor(Math.random() * 16777215).toString(16);
-        h1.style.background = rando1;
-        h1.style.width = "800px";
-        asd = 0;
-        console.log(asd);
-      }
-    }, 1000);
-  } else {
-    function stopbackground() {
-      playStop = 0;
-      h1.style.background = "transparent";
-      h1.style.width = 400;
-      console.log("wtf");
+  setInterval(() => {
+    if (skalering < cells.length) {
+      let ruto = cells[skalering];
+      let rando1 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+      ruto.style.background = rando1;
+      skalering++;
+    } else {
+      skalering -= 100;
     }
-  }
+  }, 20);
 }
 
 // TRANSFORM SHIT-------------------------------------------------------------
@@ -57,9 +28,23 @@ let scale2 = 0;
 
 let r2 = document.getElementById("row2");
 let r1 = document.getElementById("row1");
+let x1 = document.getElementById("tData1");
+let x2 = document.getElementById("x9y1");
+let x3 = document.getElementById("x10y1");
+let x4 = document.getElementById("x9y2");
+let x5 = document.getElementById("x10y2");
+
 function btnClick2() {
   if (!scaled) {
     scaled = 1;
+
+    x2.colSpan = 1;
+    x3.rowSpan = 1;
+    x4.rowSpan = 1;
+    x5.rowSpan = 1;
+
+    x1.colSpan = 1;
+    x1.rowSpan = 1;
     r1.style.fontSize = "0px";
     r1.style.height = "40px";
     r2.style.height = "40px";
@@ -69,8 +54,15 @@ function btnClick2() {
     tabellen.style.marginRight = "auto";
     tabellen.style.fontSize = "0";
     tabellen.style.backgroundColor = "transparent";
-    h1.textContent = "TETRIS";
+    h1.textContent = "DISCO";
   } else {
+    x2.colSpan = 3;
+    x3.rowSpan = 10;
+    x4.rowSpan = 9;
+    x5.rowSpan = 9;
+
+    x1.colSpan = 2;
+    x1.rowSpan = 2;
     r1.style.fontSize = "40px";
     r2.style.height = "70px";
     tabellen.style.width = "100%";
@@ -80,6 +72,7 @@ function btnClick2() {
     scaled = 0;
   }
 }
+
 function btnClick3() {
   if (!scale2) {
     scale2 = 1;
