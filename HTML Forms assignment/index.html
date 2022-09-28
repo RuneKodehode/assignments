@@ -8,33 +8,45 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>HTML FORMS ASSIGNMENT</h1>
-    <div class="box">
-      <input class="txtbox" type="text" />
-      <input type="submit" />
+    <div id="headliner">
+      <h1>BUY AND DOWNLOAD MORE RAM</h1>
     </div>
     <div class="box">
-      <input type="search" />
-      <input type="checkbox" />
+      <h3>Slide to choose how much RAM to buy</h3>
+      <input
+        onclick="buyRam()"
+        id="slider"
+        type="range"
+        min="0"
+        max="33000"
+        step="512"
+      />
+      <p id="mbRam">mb of RAM to buy:</p>
+      <input
+        id="buyBtn"
+        onclick="dwnRam()"
+        type="submit"
+        value="BUY AND DOWNLOAD"
+      />
+      <div id="eDiv">
+        <input
+          id="eMail"
+          type="e-mail"
+          placeholder="enter your e-mail to recieve"
+        />
+      </div>
     </div>
-    <div class="box">
-      <input class="txtbox" type="e-mail" />
-      <input type="radio" />
-      <input type="date" />
-    </div>
-    <div class="box">
-      <input type="color" />
-      <input type="button" />
-    </div>
+
+    <!------------------youtube player------------------------------->
     <div class="ytb">
-      <iframe id="ytbPlayer"
-        width="444"
-        height="250"
-        src="https://www.youtube.com/embed/byNQYBI3Pw4?autoplay=1&mute=1&controls=0"
+      <iframe
+        class="ytb"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/PVad0c2cljo?autoplay=1&mute=1&controls=0"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-        autoplay=
       ></iframe>
     </div>
     <script src="index.js"></script>
