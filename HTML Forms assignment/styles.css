@@ -3,12 +3,15 @@ body {
   height: 100vh;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  overflow: hidden;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
   text-decoration: underline;
+  color: #61f8ed;
+  text-shadow: 5px 5px 5px black;
 }
 
 .box {
@@ -21,7 +24,7 @@ h1 {
 .ytb {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+
   border-radius: 20px;
 }
 
@@ -101,7 +104,8 @@ h3 {
   font-weight: 700;
 }
 #headliner {
-  background: linear-gradient(54deg, #216e2e, #7ecb8b);
+  background-image: url("images/hlphoto.jpg");
+  background-position: center;
   height: 150px;
   padding-top: 10px;
   margin: -10px;
@@ -120,4 +124,29 @@ h3 {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+}
+#pic1 {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 0;
+}
+#pic2 {
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  height: 400px;
+  width: 400px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 0;
+}
+#submit {
+  opacity: 0;
 }

@@ -17,11 +17,11 @@
         onclick="buyRam()"
         id="slider"
         type="range"
-        min="0"
+        min="256"
         max="33000"
         step="512"
       />
-      <p id="mbRam">mb of RAM to buy:</p>
+      <p id="mbRam">Amount of RAM to buy:</p>
       <input
         id="buyBtn"
         onclick="dwnRam()"
@@ -34,6 +34,7 @@
           type="e-mail"
           placeholder="enter your e-mail to recieve"
         />
+        <button id="submit" onclick="buyBtn()">SUBMIT</button>
       </div>
     </div>
 
@@ -48,6 +49,20 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+    </div>
+    <div>
+      <img
+        id="pic1"
+        src="images/RAM1.jpg"
+        alt="RAM memory card closeup photo"
+      />
+    </div>
+    <div>
+      <img
+        id="pic2"
+        src="images/RAM2.jpg"
+        alt="RAM memory card closeup photo"
+      />
     </div>
     <script src="index.js"></script>
   </body>
