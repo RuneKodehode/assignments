@@ -149,4 +149,10 @@ h3 {
 }
 #submit {
   opacity: 0;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+#submit:hover {
+  cursor: pointer;
 }
