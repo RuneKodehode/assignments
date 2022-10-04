@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(black, grey);
+  height: 100vh;
+}
+
+#piano {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 8px solid wheat;
+  width: 400px;
+  margin: 100px auto 0px auto;
+  background: grey;
+  border-radius: 10px;
+}
+#playBtn {
+  margin: 50px auto 0px auto;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+#playBtn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 8px whitesmoke;
+}
+#playBtn:active {
+  transform: translateY(3px);
+}
+
+.key {
+  height: 150px;
+  width: 40px;
+  font-weight: 900;
+  border-radius: 5px;
+}
+.key:hover {
+  cursor: pointer;
+}
+.key:active {
+  transform: translateY(4px) translateX(3px);
+  box-shadow: -4px -4px 4px black;
+}
+#ckey:active {
+  transform: translateY(4px) translateX(3px);
+  box-shadow: -4px -4px 4px black;
+}
