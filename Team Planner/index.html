@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Team Planner</h1>
+    <script src="index.js"></script>
+
+    <div id="tableDiv">
+      <img id="pitch" src="images/Pitch.svg.svg" alt="" />
+      <div id="wtf2">
+        <input type="text" id="nameInput" />
+        <select name="position" id="position">
+          <option value="GK">GK</option>
+          <option value="LB">LB</option>
+          <option value="CB">CB</option>
+          <option value="RB">RB</option>
+          <option value="DM">DM</option>
+          <option value="CM">CM</option>
+          <option value="AM">AM</option>
+          <option value="LW">LW</option>
+          <option value="RW">RW</option>
+          <option value="ST">ST</option>
+        </select>
+        <input id="subBtn" onclick="submit()" type="submit" />
+        <div>
+          <table id="tabell"></table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

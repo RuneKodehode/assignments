@@ -1,0 +1,142 @@
+// array with todolist items:
+const todoList = ["plan code", "code"]
+
+document.getElementById("app").innerHTML = `<h1>🕒 Todo list</h1>
+  <main>
+      <form id="todo-input">
+          <label for="todo-text">Add todo: </label>
+          <input type="text" id="todo-text">
+          <button type="submit">Add todo</button>
+          <p id="error"></p>
+      </form>
+
+      <div id="todos"></div>
+  </main>`;
+
+// render todolist on the page:
+viewTodolist()
+
+// handle the form:
+const formElement = document.getElementById("todo-input")
+
+formElement.addEventListener("submit", (event) => {
+  event.preventDefault()
+  
+  const addTodoTextElement = document.getElementById("todo-text")
+  // add todo to todoList Array
+  addTodo(addTodoTextElement.value)
+
+  // add todo to the page:
+  const todoListElements = document.getElementById("todos")
+  todoListElements.innerHTML += `
+    <li>${addTodoTextElement.value}
+      <button id="${addTodoTextElement.value}">remove</button>
+    </li>`
+  addButtonEvents()
+})
+
+addButtonEvents()
+
+function addButtonEvents() {
+  const buttonElements = document.querySelectorAll("#todos button")
+  
+  buttonElements.forEach(buttonEl => {
+    buttonEl.addEventListener("click", () => {
+      
+      // remove todo from todoList array
+      removeTodo(buttonEl.id)
+      // remove the element from the page
+      buttonEl.parentElement.remove()
+    })
+  })
+}
+
+document.querySelector("button").addEventListener("click", function() {
+  console.log("clicked")
+})
+
+
+
+// adds a todo item
+function addTodo(text) {
+  todoList.push(text)
+}
+
+// removes a todo item
+function removeTodo(text) {
+  //console.log(text)
+  // find Index of text in todoList
+  const itemIndex = todoList.findIndex(function(todoItem) {
+    return todoItem == text
+  })
+  // const itemIndex = todoList.findIndex((todoItem) => todoItem == text) // arrow function version of the above function
+
+  // if item is not found in todoList return from function. This means code below here won't execute.
+  if (itemIndex < 0) return
+
+  todoList.splice(itemIndex, 1)
+
+  const todoListElements = document.getElementById("todos")
+
+  // to get a HTML collection:
+  // console.log(todoListElements.children)
+  // console.log(todoListElements.children[0])
+  // we cannot use array methods on a HTML collection
+  // todoListElements.children.forEach(element => console.log(element))
+
+  // to get a NodeList of elements:
+  // console.log(todoListElements.childNodes)
+  // console.log(todoListElements.children[0])
+  // we can use some array methods on a NodeList
+  // todoListElements.childNodes.forEach(element => console.log(element))
+  // console.log(todoListElements.childNodes.length)
+  
+  //todoListElements.children[1].remove()
+
+
+  
+
+}
+
+// displays all todolist items
+function viewTodolist() {
+  // loop through todolist, and display each item
+  /* for (let index = 0; index < todoList.length; index++) {
+    console.log(todoList[index])
+  } */
+
+  /* todoList.forEach(function(todoItem) {
+    console.log(todoItem)
+  }) */
+
+  // todoList.forEach(todoItem => console.log(todoItem))
+
+  // view todolist on the page:
+
+  /*
+  <li>code
+    <button>remove</button>
+  </li>
+  */
+
+  const todoListElements = document.getElementById("todos")
+  //console.log(todoListElements)
+
+  todoList.forEach((todoItem, index) => {
+    todoListElements.innerHTML += `
+    <li>${todoItem}
+      <button id="${todoItem}">remove</button>
+    </li>`
+  })
+
+}
+
+/* addTodo("test")
+addTodo("adghadh")
+addTodo("jhcvc")
+addTodo("24624w") */
+
+
+
+
+/* removeTodo("code") */

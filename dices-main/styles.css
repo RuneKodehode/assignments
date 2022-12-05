@@ -1,0 +1,43 @@
+body {
+    background: #343a40;
+    text-align: center;
+    font-family: monospace;
+}
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+#tre {
+    display: flex;
+    justify-content: center;
+}
+#to {
+    display: flex;
+    justify-content: center;
+}
+.d20 {
+    margin: 5px 40px 5px 0px;
+    border: 10px solid black;
+    border-radius: 20px;
+    width: 200px;
+    height: 140px;
+    background-color: wheat;
+    font-size: 23px;
+}
+#d20dice {
+        height: 25px;
+        width: 70px;
+        text-align: center;
+        margin: auto auto;
+        border-radius: 10px;
+        background-color: #6c757d;
+        font-weight: 700;
+}
+#d20dice:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #f8ad9d;
+}
