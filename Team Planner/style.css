@@ -1,0 +1,39 @@
+body {
+  background-color: grey;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+}
+#nameInput {
+  width: 200px;
+  height: 20px;
+  margin: 0px auto 0px auto;
+}
+#pitch {
+  margin-top: -70px;
+  width: 280px;
+}
+#tableDiv {
+  display: flex;
+}
+#wtf2 {
+  margin-left: 20px;
+}
+
+.tName {
+  width: 300px;
+}
+.tRemove {
+  width: 60px;
+}
+#subBtn {
+}
+table,
+td {
+  border: 1px solid black;
+}
+tr {
+  border: 1px solid black;
+}
