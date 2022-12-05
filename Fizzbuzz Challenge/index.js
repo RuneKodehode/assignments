@@ -16,7 +16,7 @@ function createArray(upperbound) {
 }
 console.log(array);
 
-createArray(329);
+createArray(669);
 
 //
 
